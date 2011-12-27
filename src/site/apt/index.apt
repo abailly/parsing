@@ -1,0 +1,24 @@
+ -----
+ Parsing: Utilities in Java
+ ----- 
+ Arnaud Bailly
+ -----
+ 3 December 2005
+ -----
+ 
+Introduction 
+
+  This small library is made from two different parts:
+
+  * a generic API for parsing: This API is used in
+  {{{http://www.achilleus.net/fidl} FIDL}} project to allow plugability
+  and extensibility of various parsers used at different stages in the
+  parsing process. I hope to have some time to devote  to make this
+  API into a full-blown LALR parser generator that will suite  the
+  object-oriented paradigm. 
+
+  * various utility classes that are I think mostly rewriting of
+  existing features I did not found (or did not care to find) when I
+  needed them: Composite class loading that allows aggregation of
+  classes loaded from various sources into the standard resolution
+  mechanism, some data structures, a Pipe utility, ...
